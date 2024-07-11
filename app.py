@@ -37,8 +37,3 @@ decrypt(dataBasePath)
 # encrypt(account1)
 # encrypt(account2)
 # encrypt(account3)
-
-
-# # # Let us decrypt using our original password
-# # decrypted = decryption.main(data, password)
-# # print(bytes.decode(decrypted))
