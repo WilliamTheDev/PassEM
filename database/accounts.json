@@ -1,31 +1,4 @@
 {
     "accounts": {
-        "pornhub.com": {
-            "label": "fun!",
-            "password": {
-                "cipher_text": "X6vjBJRbGg==",
-                "salt": "wpX5smDJHi2J9qrPllJuCQ==",
-                "nonce": "2cgsSSodH3mv6I0IUFXajw==",
-                "tag": "d7Y7ZnHlVBQxt484+hEqhQ=="
-            }
-        },
-        "peterrayansgayporn.net": {
-            "label": "kms",
-            "password": {
-                "cipher_text": "stCmGA==",
-                "salt": "El7NXRYKqUWZiTwF9+Z22Q==",
-                "nonce": "ni2POF0IgyLIhO3jsXJWEQ==",
-                "tag": "o1VaOfpWV0jYQ475YtVGKw=="
-            }
-        },
-        "steam.com": {
-            "label": "fun!",
-            "password": {
-                "cipher_text": "EWqtyA==",
-                "salt": "MAa8cT5jpdY+0iBJYDGQBQ==",
-                "nonce": "0bpJwghUuTzb2VnuaqL9wQ==",
-                "tag": "TnlXZY+yssuraxyzPuzzsw=="
-            }
-        }
     }
 }
