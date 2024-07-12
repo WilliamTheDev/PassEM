@@ -32,7 +32,7 @@ def add_account(newAccount: dict, masterPass: str) -> None:
 def show_accounts(masterPass) -> None:
     # reads database
     dbData = database.read(DBPATH)
-    if len(dbData['accounts']) < 0:  
+    if len(dbData['accounts']) < 1:  
         print("the database is empty")
         return 
 
