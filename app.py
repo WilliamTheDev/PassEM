@@ -92,5 +92,5 @@ def add_account(dbpath: str, masterPass: str) -> None:
 
 
 masterPass = getpass(F"Enter the master password for '{DBPATH}': ")
-accounts = data_base.load_db(DBPATH, masterPass)
+accounts = load_db(DBPATH, masterPass)
 print(accounts)
