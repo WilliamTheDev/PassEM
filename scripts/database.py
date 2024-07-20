@@ -1,17 +1,23 @@
-import json
+import json, os
 
-# Reads the database
-def read(dbpath: str) -> list:
+from scripts import crypt 
+
+def read(dbpath: str) -> dict:
+    if os.path.exists(dbpath) != True:
+        print(f'{dbpath} does not exist')
+        return None
+    
     with open(dbpath, "r") as database:
         data = json.load(database)
-    return data
+        return data
 
-# Writes to database
-def write(dbpath: str, data: list) -> str:
-    print(data)
+
+def write(dbpath: str, data: dict) -> str:
     try:
         with open(dbpath, "w") as database:
+            database.seek(0)  
             json.dump(data, database)
-        return f"Data scuessfully written to {dbpath}"
-    except:
-        return f"Failed to write the data to {dbpath}"
+            database.truncate() 
+        print(f"Data scuessfully written to {dbpath}")
+    except Exception as e:
+        print(f"Failed to write the data to {dbpath}: {e}")
